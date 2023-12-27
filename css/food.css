@@ -1,0 +1,429 @@
+main { 
+    width: 100%;
+    height: 2000px;
+}
+#food-culture { 
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+
+#food-text { 
+    margin-top: 70px;
+    width: 85%;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+#food-text h1 {
+    font-size: 35px;
+    letter-spacing: 3px;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+}
+
+#food-text p {
+    font-size: 20px;
+    letter-spacing: 0.6px;
+    line-height: 30px;
+    color: rgb(85, 81, 81);
+    font-weight: lighter;
+}
+#food { 
+    z-index: 2;
+    position: absolute;
+    width: 300px;
+    margin-left: 10%;
+    margin-top: 20%;
+}
+
+#food p {
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+}
+
+#food u {
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+}
+
+#page-title { 
+    width: 100%;
+    top: 600px;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 35px;
+    color: black;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+#food-collection { 
+    height: 600px;  
+    position: relative;
+    width: 100%;
+    place-items: center;
+}
+
+#food-collection h2{ 
+    letter-spacing: 0.4px;
+    font-size: 30px;
+    width:100%;
+    color: rgb(117, 96, 57);
+    letter-spacing: 1.5px;
+    font-weight: 565;
+    text-align: center;
+}
+
+#foodcol-inner { 
+    width: 85%;
+    height: 450px; 
+    position: relative;
+    border-bottom: 3px solid rgb(116, 112, 112);
+    border-top: 3px solid rgb(116, 112, 112);
+    display: flex;
+    width: calc(400px * 18);
+    overflow: hidden;
+    animation: scroll 40s linear infinite;
+}
+
+@keyframes scroll { 
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-400px * 9));
+    }
+}
+
+.food-image { 
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+
+.image-container { 
+    text-align: center;
+    width: 100%;
+    position: relative;
+    align-items: center;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.food-heading { 
+    position: absolute;
+    color: white;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#restaurant-list { 
+    height: 1900px;  
+    position: relative;
+    width: 100%;
+}
+
+#restaurantl-inner { 
+    width: 85%;
+    height: 600px; 
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+    min-width: 900px;
+    position: relative;
+}
+
+#restaurantl-inner h2{ 
+    letter-spacing: 0.4px;
+    font-size: 30px;
+    width: 85%;
+    color: rgb(117, 96, 57);
+    letter-spacing: 1.5px;
+    font-weight: 565;
+    max-width: 1200px;
+}
+
+
+.city{ 
+    font-size: 25px;
+    font-size: 25px;
+    font-weight: 650;
+    letter-spacing: 1.5px;
+}
+
+.restaurant-container { 
+    display: grid;
+    height: 400px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.restaurant-card { 
+    width: 100%;
+    height: 100%;
+    background-color: #9C9496;
+    border-radius: 20px;
+    box-shadow: 0 1px 10px rgb(0 0 0 / 0.2);
+    display: flex;
+}
+
+.restaurant-card:hover{ 
+    box-shadow: 0 10px 10px rgb(0 0 0 / 0.2);
+}
+
+.restaurant-image { 
+    height: 100%;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.restaurant-text { 
+    display: inline-block;
+    text-decoration:none;
+}
+
+.restaurant-text h4 { 
+    font-size: 17px;
+    color: rgb(0, 0, 0);
+    margin-left: 10px;
+    letter-spacing: 0.8px;
+    line-height: 25px;
+    font-weight: 700;
+}
+
+.restaurant-text p { 
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    margin-left: 10px;
+    letter-spacing: 0.5px;
+    line-height: 25px;
+    font-weight: 500;
+}
+
+.location { 
+    display: flex;
+    grid-row: 4;
+}
+
+.map-icon { 
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.restaurant-location { 
+    margin-left: 25px;
+    color: rgb(121, 121, 121);
+}
+
+#bali { 
+    position: absolute;
+    top: 1400px;
+    height: 800px;
+}
+
+#yogyakarta { 
+    position: absolute;
+    top: 700px;
+    height: 100px;
+
+}
+
+
+@media (max-width: 1050px) {
+    .food-heading { 
+        font-size: 15px;
+        top: 70%;
+    }
+}
+
+@media (max-width: 940px) {
+
+    .restaurant-container { 
+        width: 90%;
+        display: inline-block  ;
+        height:200px;
+    }
+
+    #restaurantl-inner h2{ 
+        width: 100%;
+    }
+
+    .restaurant-card { 
+        width: 100%;
+        height: 200px;
+        position: relative;
+        left: auto;
+        right:0;
+        margin-bottom: 50px;
+        
+    }
+    .restaurant-image { 
+        display: inline-block;
+        height: 100%;
+        width:200px;
+    }
+    
+    .restaurant-text { 
+        bottom: 20px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+    }
+
+    .restaurant-text p{ 
+       height: 50px;
+       font-size: 12px;
+       line-height: 15px;
+    }
+
+    .city { 
+        text-align: left;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #restaurantl-inner h2{ 
+        text-align: left;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #restaurantl-inner { 
+        width: 100%;
+        height: 1000px; 
+        min-width: 300px;
+        align-items: center;
+    }
+
+    #jakarta { 
+        text-align: center;
+    }
+
+    #bali {
+        text-align: center;
+        margin-top: 50px;
+        height: 400px;
+        position: absolute;
+        top: 1100px;
+    }
+
+    #yogyakarta { 
+        position: absolute;
+        text-align: center;
+        top: 2300px;
+    }
+
+    
+    
+    
+}
+
+@media (max-width: 600px) {
+
+    #food {
+        z-index: 2;
+        position: absolute;
+        width: 300px;
+        left: 20%;
+        top: 55%;
+    }
+    #food p {
+        font-size: 20px;
+    }
+    #food  u {
+        font-size: 20px;
+    }
+
+    #food-text h1 {
+        font-size: 30px;
+    }
+    
+    #food-text p {
+        font-size: 15px;
+    }
+    #food-collection { 
+        height: 500px;  
+    }
+    
+    #foodcol-inner { 
+        height: 500px; 
+    }
+
+    .food-heading { 
+        font-size: 12px;
+        top: 60%;
+    }
+}
+
+@media (max-width: 500px) {
+
+    #food {
+        z-index: 2;
+        position: absolute;
+        width: 300px;
+        left: 20%;
+        top: 55%;
+    }
+    #food p {
+        font-size: 20px;
+    }
+    #food  u {
+        font-size: 20px;
+    }
+
+    #food-text h1 {
+        font-size: 30px;
+    }
+    
+    #food-text p {
+        font-size: 15px;
+    }
+    #food-collection { 
+        height: 500px;  
+    }
+    
+    #foodcol-inner { 
+        height: 500px; 
+    }
+
+    .food-heading { 
+        font-size: 12px;
+        top: 60%;
+    }
+
+    .restaurant-image{ 
+        width: 150px;
+    }
+
+    .restaurant-text h4 { 
+        font-size: 14px;
+        margin: 0;
+    }
+
+    .restaurant-text p { 
+        font-size: 10px;
+    }
+
+    .location { 
+        position: absolute;
+        bottom: 0;
+    }
+}

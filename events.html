@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "css/events.css">
+    <link rel = "stylesheet" href = "css/global.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/global.js"></script>
+    <script src="js/events.js"></script>
+    <title>Events</title>
+</head>
+<body>
+    <!--Header and navigation bar-->
+    <header class = "navigation"> 
+        <img id = "flag" alt = "Indonesian Flag" src = "images/download.png"> 
+        <nav class = "menu-bar"> 
+            <a href = "main.html" style="text-decoration:none">About</a>
+            <a href = "destination.html" style="text-decoration:none">Destination</a>
+            <a href = "food.html" style="text-decoration:none">Food</a>
+            <a id = "active-bar">Events</a>
+            <a href = "transportation.html" style="text-decoration:none">Transportation</a>
+        </nav>
+    </header>
+
+    <div class = "main-title" id = "endless">
+        <p>Endless <u>possibilities</u>.</p>
+    </div>
+
+    <!--Page main image and text-->
+    <div class = "main-image"> 
+        <img alt = "Dock and fishing boats" id = "big-image" src = "images/pexels-ahmad-syahrir-758742.jpg">
+    </div>
+
+    <main>
+        <h1 id = "page-title">Exciting Activities</h1>
+        <!--All upcoming events section-->
+        <section id = "upcoming">
+            <h2 class = "events-title">Upcoming events</h2>
+            <div id = "upcoming-events">
+                <article class = "event-card" id="event-one"> 
+                    <img alt = "Woke up Fest logo" class = "event-image" src = "images/wokeup.png">
+                    <div class = "tag" id = "jakarta-tag">
+                        Jakarta
+                    </div>
+                    <h3 class = "event-heading">WOKE UP FEST</h3>
+                    <p class = "date">25 February 2023</p>
+                    <p class = "festival-info">A
+                         one-day music festival showcasing various musical genres,
+                        featuring artists such as ONEREPUBLIC, Dean Lewis, and more! 
+                    </p>
+                    <a href = "https://wokeupfest.com/" class = "event-button" id = "festButton">Browse event</a>
+                </article>
+
+                <article class = "event-card" id="event-two"> 
+                    <img alt = "A plate of salad" class = "event-image" src = "images/pexels-ida-rizkha-3008740.jpg">
+                    <div class = "tag" id = "bandung-tag">
+                        Bandung
+                    </div> 
+                    <h3 class = "event-heading">Bandung West Java Food & Beverage Expo</h3>
+                    <p class = "date">22 - 25 February 2023</p>
+                    <p class = "festival-info">Join us for a three-day international exhibiton on Food & 
+                        Beverage Products, Ingredients, Hospitality Technology and Services. 
+                    </p>
+                    <a href = "https://bandungfoodexpo.com/" class = "event-button" id = "expoButton">Browse event</a>
+                </article>
+
+                <article class = "event-card" id="event-three"> 
+                    <img alt = "Batik making" class = "event-image" src = "images/pexels-john-bastian-10682942.jpg">
+                    <div class = "tag" id = "surabaya-tag">
+                        Surabaya
+                    </div>
+                    <h3 class = "event-heading">Batik Bordir & Accessories Fair 2023</h3>
+                    <p class = "date">8 - 12 March 2023</p>
+                    <p class = "festival-info">
+                        Take this opportunity to learn more about batik and embroidery. 
+                        Exhibition conforms to health protocol standards.
+                    </p>
+                    <a href = "https://www.cantonfair.net/event/29298-batik-bordir-accessories-fair" class = "event-button" id = "batikButton">Browse event</a>
+                </article>
+            </div>
+        </section>
+        <!--All future events section-->
+        <section id = "future">
+            <h2 class = "events-title">Future events</h2>
+            <form id = "search">
+                <input id = "search-events" type="text" placeholder="Search.." name="search">
+                <img alt = "Magnifying Glass" src = "images/icons8-search-50.png"> 
+            </form>
+            <article class = "all-events" id = "jazz-fest"> 
+                <img alt = "Person playing saxophone" class = "future-image" src = "images/pexels-victor-freitas-733767.jpg"> 
+                <a href = "https://www.javajazzfestival.com/" class = "future-text"> 
+                    <h3 class = "future-heading">International Java Jazz Festival</h3> 
+                    <p class = "future-date">2 June - 4 June 2023</p>
+                    <p class = "future-paragraph">
+                        One of the largest jazz festivals in the world, held annually 
+                        in Jakarta. A gathering of some of the most talented jazz musicians, a perfect event for 
+                        jazz enthusiasts and casual listeners.
+                    </p>
+                    <div class = "location"> 
+                        <img alt = "Map icon" class = "map-icon" src = "images/icons8-map-pin-24.png"> 
+                        <p class = "future-location">Jakarta, Indonesia</p>
+                    </div>
+                </a>
+            </article>
+
+            <article class = "all-events" id = "ubud-food"> 
+                <img alt = "Traditional Balinese dance" class = "future-image" src = "images/pexels-aditya-agarwal-1477310.jpg"> 
+                <a href = "https://www.ubudfoodfestival.com/" class = "future-text"> 
+                    <h3 class = "future-heading">Ubud Food Festival</h3> 
+                    <p class = "future-date">30 July - 2 June 2023</p>
+                    <p class = "future-paragraph">
+                        An event that celebrates Indonesia's diverse culture, 
+                        showcasing various delicious local cuisine for you to taste, as well as live 
+                        performance of traditional dances and music.
+                    </p>
+                    <div class = "location"> 
+                        <img alt = "Map icon" class = "map-icon" src = "images/icons8-map-pin-24.png"> 
+                        <p class = "future-location">Ubud, Bali, Indonesia</p>
+                    </div>
+                </a>
+            </article>
+
+            <article class = "all-events" id = "fashion"> 
+                <img alt = "Jakarta fashion week poster" class = "future-image" src = "images/382x255xcc55a88fa98ccb8ed27286c85afec620.jpg.pagespeed.ic.Zc_vZYcA9k.jpg"> 
+                <a href = "https://www.jakartafashionweek.co.id/" class = "future-text"> 
+                    <h3 class = "future-heading">Jakarta Fashion Week</h3> 
+                    <p class = "future-date">TBA</p>
+                    <p class = "future-paragraph">Held annually since 2008, Jakarta Fashion Week brings 
+                        together some of the most influential designers to showcase Indonesian culture 
+                        through the lens of fashion. 
+                    </p>
+                    <div class = "location"> 
+                        <img alt = "Map icon" class = "map-icon" src = "images/icons8-map-pin-24.png"> 
+                        <p class = "future-location">Jakarta, Indonesia</p>
+                    </div>
+                </a>
+            </article>
+
+            <article class = "all-events" id = "ai"> 
+                <img alt = "Photo of a Futuristic Robot" class = "future-image" src = "images/pexels-pavel-danilyuk-8294608.jpg"> 
+                <a href = "https://10times.com/wais-jakarta" class = "future-text"> 
+                    <h3 class = "future-heading">World AI show</h3> 
+                    <p class = "future-date">7 June - 8 June 2023</p>
+                    <p class = "future-paragraph">An AI-driven event featuring some of the brightest minds in the AI industry.
+                        Activities range from keynotes, presentations, panel discussions and so many more insightful activities!
+                    </p>
+                    <div class = "location"> 
+                        <img alt = "Map icon" class = "map-icon" src = "images/icons8-map-pin-24.png"> 
+                        <p class = "future-location">Jakarta, Indonesia</p>
+                    </div>
+                </a>
+            </article>
+
+            <article class = "all-events" id = "solo-batik"> 
+                <img alt = "Batik Motif" class = "future-image" src = "images/pexels-tamanna-rumee-8752421.jpg"> 
+                <a href = "https://www.carnivaland.net/solo-batik-carnival/" class = "future-text"> 
+                    <h3 class = "future-heading">Solo Batik Carnival</h3> 
+                    <p class = "future-date">TBD</p>
+                    <p class = "future-paragraph"> 
+                        An annual celebration of Indonesia's motif, Batik. This parade is one of the biggest events in
+                        Solo celebrating and showcasing this beautiful ancient art and craft.
+                    </p>
+                    <div class = "location"> 
+                        <img alt = "Map icon" class = "map-icon" src = "images/icons8-map-pin-24.png"> 
+                        <p class = "future-location">Solo, Indonesia</p>
+                    </div>
+                </a>
+            </article>
+            
+            <article class = "all-events" id = "indep-day"> 
+                <img alt = "Indonesian Flag" class = "future-image" src = "images/pexels-irgi-nur-fadil-14226731.jpg"> 
+                <a href = "https://www.expat.or.id/info/august17th-IndonesianIndependenceDay.html" class = "future-text"> 
+                    <h3 class = "future-heading">Independence Day</h3> 
+                    <p class = "future-date">17 August 2023</p>
+                    <p class = "future-paragraph"> 
+                        One of the biggest events that is celebrated by the entire population of Indonesia. During 
+                        indpendence day, you will find various exciting events and festivals. 
+                    </p>
+                    <div class = "location"> 
+                        <img alt = "Map icon" class = "map-icon" src = "images/icons8-map-pin-24.png"> 
+                        <p class = "future-location">Indonesia</p>
+                    </div>
+                </a>
+            </article>
+
+        </section>
+    </main>
+</body>
+</html>

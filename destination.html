@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet" href = "css/global.css">
+        <link rel = "stylesheet" href = "css/destination.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="js/global.js"></script>
+        <script src="js/destination.js"></script>
+        <title>Destination</title>
+    </head>
+<body>
+     <!--Header and navigation bar-->
+     <header class = "navigation"> 
+        <img id = "flag" alt = "Indonesian Flag" src = "images/download.png"> 
+        <nav class = "menu-bar"> 
+            <a href = "main.html" style="text-decoration:none">About</a>
+            <a id = "active-bar" style="text-decoration:none">Destination</a>
+            <a href = "food.html" style="text-decoration:none">Food</a>
+            <a href = "events.html" style="text-decoration:none">Events</a>
+            <a href = "transportation.html" style="text-decoration:none">Transportation</a>
+        </nav>
+    </header>
+    <div class = "main-title" id = "chase">
+        <p>Chase your <u>dreams</u>.</p>
+    </div>
+    <!--Page main image and text-->
+    <div class = "main-image"> 
+        <img alt = "Paddy field" id = "big-image" src = "images/pexels-tom-fisk-1555581.jpg">
+    </div>
+
+    <main>
+         <!--Introduction to destinations in Indonesia-->
+        <section id = "destination">
+            <div id = "des-text">
+                <h1>Pick your destination.</h1>
+                <p>
+                    Due to Indonesia's diverse landscapes and culture, you can get a completely different holiday experience
+                    depending on where you choose to spend your time in. In Jakarta, you will find a bustling city
+                    full of things to do. Meanwhile, in Bali, you can relax and experience a slow-paced lifestyle away from all 
+                    the activities.
+                </p>
+            </div>    
+        </section>
+         <!--Tourist attractions for three cities: Jakarta, Bali, and Yogyakarta-->
+        <section id = "landmarks">
+            <h2>Landmarks</h2>
+            <!--Tourist attractions for Jakarta-->
+            <div id = "jakarta">
+                <h3 class = "landmark-title">Jakarta</h3>
+                <div class = "landmark-grid" id = "jakarta-grid">
+                    <div class= "landmark-block" id = "jakarta-one">
+                        <h4 class = "smalll-heading">MONAS</h4>
+                        <img alt = "Monas" class = "landmark-image" src = "images/fuad-najib-dj8qNc8JdBM-unsplash.jpg">
+                    </div>
+                    <div class= "landmark-block" id = "jakarta-two">
+                        <h4 class = "smalll-heading">TAMAN MINI</h4>
+                        <img alt = "Taman Mini" class = "landmark-image" src = "images/rafael-atantya-lEVDRwsSCE8-unsplash.jpg">
+                    </div>
+                    <div class= "landmark-block" id = "jakarta-three">
+                        <h4 class = "smalll-heading">ISTIQAL MOSQUE</h4>
+                        <img alt = "Istiqal Mosque" class = "landmark-image" src = "images/rakabtw_-L3TSVxzLMsw-unsplash.jpg">
+                    </div>
+                    <div class= "landmark-block" id = "jakarta-four" >
+                        <h4 class = "smalll-heading">CHINATOWN</h4>
+                        <img alt = "Chinatown" class = "landmark-image" src = "images/ivan-samudra-iPLmdSUcAQg-unsplash.jpg">
+                    </div>
+                    <div class= "landmark-block" id = "jakarta-five" >
+                        <h4 class = "smalll-heading">JAKARTA HISTORY MUSEUM</h4>
+                        <img alt = "Jakarta History Museum" class = "landmark-image" src = "images/reza-badar-F80M6uVLGdA-unsplash.jpg">
+                    </div>
+                    <div class = "nextButton" id = "nextJakarta">
+                        <img class = "buttonIcon" alt = "Greater than icon" src = "images/icons8-more-than-52.png">
+                    </div>
+                    <div class = "prevButton" id = "prevJakarta">
+                        <img class = "buttonIcon" alt = "Less than icon" src = "images/icons8-less-than-52.png">
+                    </div>
+                </div>
+                <div class = "landmark-info" id = "jakarta-info"></div>
+            </div>
+            <!--Tourist attractions for Bali-->
+            <div id = "Bali">
+                <h3 class = "landmark-title">Bali</h3>
+                <div class = "landmark-grid" id = "bali-grid">
+                    <div class= "landmark-block" id = "bali-one">
+                        <h4 class = "smalll-heading">Nusa Penida</h4>
+                        <img alt = "Nusa Penida" class = "landmark-image" src = "images/nattu-adnan-heRhwTIZrcc-unsplash.jpg">
+                    </div>
+                    <div class= "landmark-block" id = "bali-two">
+                        <h4 class = "smalll-heading">Tanah Lot</h4>
+                        <img alt = "Tanah Lot" class = "landmark-image" src = "images/nick-fewings-vVkayXvZnwQ-unsplash.jpg">
+                    </div>
+                    <div class= "landmark-block" id = "bali-three">
+                        <h4 class = "smalll-heading">Pandawa Beach</h4>
+                        <img alt = "Pandawa Beach" class = "landmark-image" src = "images/muhammad-ariyandi-ytDumHPKAuk-unsplash.jpg">
+                    </div>
+                    <div class= "landmark-block" id = "bali-four">
+                        <h4 class = "smalll-heading">Garuda Wisnu Kencana</h4>
+                        <img alt = "Garuda Wisnu Kencana" class = "landmark-image" src = "images/ayadi-ghaith-wc33AFha0-w-unsplash.jpg">
+                    </div>
+                    <div class= "landmark-block" id = "bali-five">
+                        <h4 class = "smalll-heading">Uluwatu</h4>
+                        <img alt = "Uluwatu" class = "landmark-image" src = "images/polina-kuzovkova-6eaS0_4COEE-unsplash.jpg">
+                    </div>
+                    <div class = "nextButton" id = "nextBali">
+                        <img class = "buttonIcon" alt = "Greater than icon" src = "images/icons8-more-than-52.png">
+                    </div>
+                    <div class = "prevButton" id = "prevBali">
+                        <img class = "buttonIcon" alt = "Less than icon" src = "images/icons8-less-than-52.png">
+                    </div>
+                </div>
+                <div class = "landmark-info" id = "bali-info"></div>
+            </div>
+            <!--Tourist attractions for Yogyakarta-->
+            <div id = "Yogyakarta">
+                <h3 class = "landmark-title">Yogyakarta</h3>
+                <div class = "landmark-grid" id = "jogja-grid">
+                    <div class= "landmark-block" id = "jogja-one">
+                        <h4 class = "smalll-heading">Taman Sari</h4>
+                        <img alt = "Taman Sari" class = "landmark-image" src = "images/arief-santoso-XyB4oVoGuKw-unsplash.jpg">
+                    </div>
+                    <div class= "landmark-block" id = "jogja-two">
+                        <h4 class = "smalll-heading">Mount Merapi</h4>
+                        <img alt = "Mount Merapi" class = "landmark-image" src = "images/camille-bismonte-sPkG51m1q70-unsplash.jpg">
+                    </div>
+                    <div class= "landmark-block" id = "jogja-three">
+                        <h4 class = "smalll-heading">Prambanan Temple</h4>
+                        <img alt = "Prambanan Temple" class = "landmark-image" src = "images/eugenia-clara-_QTeGT478_8-unsplash.jpg">
+                    </div>
+                    <div class= "landmark-block" id = "jogja-four">
+                        <h4 class = "smalll-heading">Jomblang Cave</h4>
+                        <img alt = "Jomblang Cave" class = "landmark-image" src = "images/shawn-pang-funPh0qvGz0-unsplash.jpg">
+                    </div>
+                    <div class= "landmark-block" id = "jogja-five">
+                        <h4 class = "landmark-heading">Borobudur</h4>
+                        <img alt = "Borobudur temple" class = "landmark-image" src = "images/steffen-b-28joUilHigc-unsplash.jpg">
+                    </div>
+                    <div class = "nextButton" id = "nextJogja">
+                        <img class = "buttonIcon" alt = "Greater than icon" src = "images/icons8-more-than-52.png">
+                    </div>
+                    <div class = "prevButton" id = "prevJogja">
+                        <img class = "buttonIcon" alt = "Less than icon" src = "images/icons8-less-than-52.png">
+                    </div>
+                </div>
+                <div class = "landmark-info" id = "jogja-info"></div>
+            </div>
+        </section>
+
+    </main>
+</body>
+</html>

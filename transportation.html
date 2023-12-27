@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet" href = "css/transportation.css">
+        <link rel = "stylesheet" href = "css/global.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="js/global.js"></script>
+        <script src="js/transportation.js"></script>
+        <title>Transportation</title>
+    </head>
+<body>
+     <!--Header and navigation bar-->
+    <header class = "navigation"> 
+        <img id = "flag" alt = "Indonesian Flag" src = "images/download.png"> 
+        <nav class = "menu-bar"> 
+            <a href = "main.html" style="text-decoration:none">About</a>
+            <a href = "destination.html" style="text-decoration:none">Destination</a>
+            <a href = "food.html" style="text-decoration:none">Food</a>
+            <a href = "events.html" style="text-decoration:none">Events</a>
+            <a id = "active-bar">Transportation</a>
+        </nav>
+    </header>
+    <div class = "main-title" id = "endless">
+        <p>Explore the <u>unknown</u>.</p>
+    </div>
+    <!--Page main image and text-->
+    <div class = "main-image"> 
+        <img alt = "Monas Indonesia" id = "big-image" src = "images/pexels-tom-fisk-2450221.jpg">
+    </div>
+
+
+    <main>
+        <img id = "plane-icon" alt = "Plane icon" src = "images/icons8-plane-100.png">
+        <!--Introduction to transportations in Indonesia-->
+        <section id = "getAround">
+            <div id = "around-text">
+                <h1>Getting Around Indonesia</h1>
+                <p>
+                    Lucky for you, there are various modes of transportation that you can utilise 
+                    to get around the country. A table has been curated for you which summarises all 
+                    the ways you can get to the wonderful destinations that Indonesia has to offer. 
+                    The list acts as a guide that informs you of all the options for travelling in 
+                    Indonesia, so that you can have a wonderful and safe journey.
+                </p>
+            </div>    
+        </section>
+        <section id = "plane-tickets"> 
+            <div id = "ticket-box">
+                <h2>Find a plane ticket.</h2>
+                <form  id = "ticket-form">
+                    <div id = "select-options">
+                        <div>
+                            <img class = "small-icon" alt = "Plane icon" src = "images/icons8-plane-32.png">
+                            <select class = "select" id = "return-oneway">
+                                <option value="Round Trip">Round trip</option>
+                                <option value="One-Way">One-way</option>
+                            </select>
+                        </div>
+                        <div>
+                            <img class = "small-icon" alt = "Person icon"  src = "images/icons8-person-24.png">
+                            <div class = "select" id = "counter">
+                                1 Adult
+                            </div>
+                        </div>
+                        <div>
+                            <img class = "small-icon" alt = "Plane icon" src = "images/icons8-price-tag-euro-24.png">
+                            <select class = "select" id = "ticket-class">
+                                <option value="ECONOMY">Economy</option>
+                                <option value="PREMIUM_ECONOMY">Premium Economy</option>
+                                <option value="BUSINESS">Business</option>
+                                <option value="FIRST">First</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div id = "select-people">
+                        <div class="selection-box" id="adults">
+                            <h3>Adults (Age: 12+)</h3>
+                            <div class="increment-button" id = "decrement-number-adult">
+                                <img class= "incdec-icon" alt = "Minus Icon" src = "images/icons8-minus-24.png">
+                            </div>
+                            <input class ="input-box" id = "adult-input" type="text" value="1">
+                            <div class="increment-button" id = "increment-number-adult">
+                                <img class= "incdec-icon" alt = "Plus Icon" src = "images/icons8-plus-24.png">
+                            </div>
+                        </div>
+                        <div class="selection-box" id="children"> 
+                            <h3>Children (Age: 2-12)</h3>
+                            <div class="increment-button" id = "decrement-number-children">
+                                <img class= "incdec-icon" alt = "Minus Icon" src = "images/icons8-minus-24.png">
+                            </div>
+                            <input class ="input-box" id = "children-input" type="text" value="0">
+                            <div class="increment-button" id = "increment-number-children">
+                                <img class= "incdec-icon" alt = "Plus Icon" src = "images/icons8-plus-24.png">
+                            </div>
+                        </div>
+                        <div class="selection-box" id="infant"> 
+                            <h3>Infants (Age: less than equal to 2)</h3>
+                            <div class="increment-button" id = "decrement-number-infant">
+                                <img class= "incdec-icon" alt = "Minus Icon" src = "images/icons8-minus-24.png">
+                            </div>
+                            <input class ="input-box" id = "infant-input" type="text" value="0">
+                            <div class="increment-button" id = "increment-number-infant">
+                                <img class= "incdec-icon" alt = "Plus Icon" src = "images/icons8-plus-24.png">
+                            </div>
+                        </div>
+                        <p>Disclaimer: the number of infants must not exceed the number adults, number of people must not exceed 9 people</p>
+                        <div id = "confirm-button">Confirm</div>
+                    </div>
+                    <div id = "search-box">
+                        <div>
+                            From
+                            <select class = "select-airport" id = "ori-airport">
+                                <option value="ATL">Hartsfield–Jackson Atlanta International Airport (ATL)</option>
+                                <option value="PEK">Beijing Capital International Airport (PEK)</option>
+                                <option value="LAX">Los Angeles International Airport (LAX)</option>
+                                <option value="LHR">Heathrow Airport (LHR)</option>
+                                <option value="HKG">Hong Kong International Airport (HKG)</option>
+                                <option value="PVG">Shanghai Pudong International Airport (PVG)</option>
+                                <option value="CDG">Charles de Gaulle International Airport (CDG)</option>
+                                <option value="AMS">Amsterdam Airport Schiphol (AMS)</option>
+                                <option value="CAN">Guangzhou Baiyun International Airport (CAN)</option>
+                                <option value="FRA">Frankfurt am Main International Airport (FRA)</option>
+                                <option value="IST">Istanbul Atatürk Airport (IST)</option>
+                                <option value="DEL">Indira Gandhi International Airport (DEL)</option>
+                                <option value="SIN">Singapore Changi Airport (SIN)</option>
+                                <option value="ICN">Incheon International Airport (ICN)</option>
+                                <option value="YYZ">Toronto Pearson International Airport (YYZ)</option>
+                                <option value="FCO">Leonardo da Vinci–Fiumicino Airport (FCO)</option>
+                                <option value="HND">Haneda Airport (HND)</option>
+                                <option value="DOH">Hamad International Airport (DOH)</option>
+                                <option value="MEL">Melbourne Airport (MEL)</option>
+                                <option value="DME">Moscow Domodedovo Airport (DME)</option>
+                                <option value="ZRH">Zürich Airport (ZRH)</option>
+                                <option value="DUB">Dublin Airport (DUB)</option>
+                                <option value="CAI">Cairo International Airport (CAI)</option>
+                                <option value="JNB">O. R. Tambo International Airport (JNB)</option>
+                                <option value="SYD">Sydney Airport (SYD)</option>
+                                <option value="MEX">Mexico City International Airport (MEX)</option>
+                                <option value="GRU">São Paulo–Guarulhos International Airport (GRU)</option>
+                                <option value="BOG">El Dorado International Airport (BOG)</option>
+                            </select>
+                        </div>
+                        <div>To
+                            <select class = "select-airport" id = "arr-airport">
+                                <option value="CGK">Jakarta Soekarno-Hatta Airport (CGK)</option>
+                                <option value="DPS">Bali Ngurah Rai Airport (DPS)</option>
+                                <option value="SUB">Surabaya Juanda Airport (SUB)</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            Going
+                            <input class = "select-date" type="date" id="going">
+                        </div>
+                        <div id = "return-box">
+                            Return
+                            <input class = "select-date" type="date" id="return">
+                        </div>
+                    </div>
+                    <div id = "search-button">Search</div>
+                </form>
+            </div>
+            <div id = "show-tickets">
+            </div>
+            <div id = "loading">
+                <img class = "icon" alt = "loading icon" src = "images/icons8-loading-circle.gif">
+            </div>
+        </section>
+        <!--Table of summary - Transportation-->
+        <section id = "table-container">
+            <h2>Transportation Table</h2> 
+            <table id = "transport-table">
+                <!--Table HEADER-->
+                <thead>
+                    <tr id = "table-header">
+                        <th>Mode</th>
+                        <th id = "description">Description</th>
+                        <th id = "proximity">Proximity</th>
+                        <th>Options</th>
+                    </tr>
+                </thead>
+                <!--Table BODY-->
+                <tbody>
+                    <tr class = "row">
+                        <td class = "mode"> <img class = "icon" alt = "Motorcycle icon" src = "images/icons8-sedan-50.png"> Ride-hailing apps</td>
+                        <td class = "description">
+                            Currently the most popular method of transportation within 
+                            cities where you can get cheap and convenient rides to get to a specific 
+                            destination. 
+                        </td>
+                        <td style="text-align:center"><div class = "close-tag">Close</div></td>
+                        <td class = "options"><a href="https://www.gojek.com/en-id/">Gojek</a>, <a href="https://www.grab.com/id/en/">GRAB</a></td>
+                    </tr>
+
+                    <tr  class = "grey-row">
+                        <td class = "mode"> <img class = "icon" alt = "Taxi icon" src = "images/icons8-taxi-back-view-48.png">Taxis</td>
+                        <td class = "description">
+                            Still one of the safest and most reliable services for transportation. If
+                             you are looking for the best services, then taxis are for you. Typically, 
+                             you can find them near the airport, popular tourist destinations or even
+                              book a taxi. 
+                        </td>
+                        <td style="text-align:center"><div class = "close-tag">Close</div></td>
+                        <td class = "options"><a href="https://www.bluebirdgroup.com/">Bluebird</a></td>
+                    </tr>
+
+                    <tr class = "row" >
+                        <td class = "mode"><img class = "icon" alt = "Bus icon" src = "images/icons8-bus-50.png">Bus</td>
+                        <td class = "description">
+                            Often the fastest and cheapest mode of transportation as 
+                            there are specialised bus lanes. To board one of the buses, you will need to 
+                            have a pre-paid card which you can top-up.
+                        </td>
+                        <td style="text-align:center"><div class = "close-tag">Close</div></td>
+                        <td class = "options"><a href="https://transjakarta.co.id/">TransJakarta</a></td>
+                    </tr>
+
+                    <tr  class = "grey-row">
+                        <td class = "mode"><img class = "icon" alt = "Train icon" src = "images/icons8-city-railway-station-48.png">Train</td>
+                        <td class = "description">
+                            Want to enjoy a scenic view on the way to your destination? 
+                            You can get to different cities within the same island and the process is easy to 
+                            navigate. 
+                        </td>
+                        <td style="text-align:center"><div class = "medium-tag">Medium</div> <div class = "far-tag">Far</div></td>
+                        <td class = "options"><a href="https://www.traveloka.com/en-id/kereta-api">KAI</a></td>
+                    </tr>
+
+                    <tr class = "row" >
+                        <td class = "mode"><img class = "icon" alt = "Ferry icon" src = "images/icons8-water-transportation-50.png">Ferry</td>
+                        <td class = "description">
+                            To travel between islands, you can board one of the ferries for a fun and 
+                            adventurous journey.
+                        </td>
+                        <td style="text-align:center"><div class = "medium-tag">Medium</div> <div class = "far-tag">Far</div></td>
+                        <td class = "options"><a href="https://www.easybook.com/ferry">Easybook</a></td>
+                    </tr>
+
+                    <tr class = "grey-row">
+                        <td class = "mode">
+                            <img class = "icon" alt = "Airplane icon" src = "images/icons8-airplane-take-off-50.png">Airplane
+                        </td>
+                        <td class = "description">
+                            Nothing beats an airplane for long-distance travelling. This is most suitable 
+                            for travelling across islands in the shortest amount of time.
+                        </td>
+                        <td style="text-align:center"> 
+                            <div class = "far-tag">Far</div>
+                        </td>
+                        <td class = "options">
+                            <a href="https://www.garuda-indonesia.com/">Garuda</a>, 
+                            <a href="https://www.lionair.co.id/">Lion Air</a>, 
+                            <a href="https://www.citilink.co.id/en">Citilink</a>, 
+                            <a href="https://www.sriwijayaair.co.id/">Sriwijaya</a>, 
+                            <a href="https://www.airasia.com/flights/indonesia">AirAsia</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+</html>

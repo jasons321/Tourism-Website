@@ -1,0 +1,401 @@
+main { 
+    width: 100%;
+}
+
+#page-title { 
+    width: 100%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 35px;
+    color: black;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+#endless { 
+    z-index: 2;
+    position: absolute;
+    width: 400px;
+    margin-left: 70%;
+    margin-top: 15%;
+}
+
+#endless p {
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+}
+
+#endless u {
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+}
+
+.show-element { 
+    transform: translateX(0) !important;
+    opacity: 1 !important;
+    filter: blur(0) !important;
+}
+
+
+#upcoming { 
+    height: 550px; 
+    position: relative;
+    width: 100%;
+    display: grid;
+}
+
+.events-title {
+    letter-spacing: 0.4px;
+    font-size: 28px;
+    margin-left: auto;
+    margin-right: auto; 
+    max-width: 1200px;
+    width: 90%;
+    color: rgb(145, 120, 74);
+    letter-spacing: 1.5px;
+    font-weight: 565;
+    margin-bottom: 0px;
+}
+
+.event-card {
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: all 1s;
+    filter: blur(5px);
+    position: relative;
+}
+
+#upcoming-events { 
+    height: 450px;
+    width: 90%;
+    max-width: 1200px;
+    display: flex; 
+    margin-left: auto;
+    margin-right: auto;
+    column-gap: 10px;
+}
+
+#event-one{
+    background-color: #9C9496;
+    width: 95%;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    position: relative;
+}
+
+.event-image{ 
+    width: 100%;
+    height: 200px;
+    object-fit: COVER;
+}
+
+.event-heading{ 
+    font-size: 20px;
+    font-weight: 300;
+    margin-left: 10px;
+    letter-spacing: 0.5px;
+    color: #050505;
+    font-weight: 600;
+}
+
+.date { 
+    font-size: 12px;
+    color:#050505;
+    margin-left: 10px;
+    letter-spacing: 0.8px;
+    margin-top: 3px;
+}
+
+.festival-info { 
+    font-size: 14px;
+    margin-left: 10px;
+    letter-spacing: 0.7px;
+    margin-top: 3px;
+    color:#050505;
+    line-height: 20px;
+}
+
+.event-button { 
+    width: 100px;
+    height: 30px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    width: 200px;
+    line-height: 30px;
+    border-radius: 5px;
+    position:absolute;
+    width: 100%;
+    bottom: 0;
+    text-decoration:none;
+}
+
+.event-button:hover { 
+    background-color: rgb(56, 53, 53);
+}
+
+.tag { 
+    color: white;
+    width: 80px;
+    height: 25px;
+    background-color: aquamarine;
+    margin-left: 10px;
+    margin-top: 10px;
+    text-align: center;
+    border-radius: 8px;
+    letter-spacing: 0.2px;
+    margin-bottom: 5px;
+    line-height: 25px;
+}
+
+#bandung-tag { 
+    background-color: rgb(31, 78, 62);
+}
+
+#jakarta-tag { 
+    background-color: rgb(52, 46, 134);
+}
+
+#surabaya-tag { 
+    background-color: rgb(50, 168, 75);
+}
+
+#event-two{ 
+    width: 95%;
+    background-color: #9C9496;
+    grid-column: 2;
+    width: 95%;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    position: relative;
+}
+
+#event-three{ 
+    background-color: #9C9496;
+    width: 95%;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    position: relative;
+}
+
+#future {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    grid-template-rows: repeat(1, 100px) repeat(3, 1fr);
+    row-gap: 30px;
+}
+
+.future-image { 
+    height: 250px;
+    width: 400px;
+    position: relative;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.future-text { 
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows:repeat(1, 40px) repeat(1, 30px) repeat(2, auto);
+    text-decoration:none;
+    background-color: #9C9496;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: all 1s;
+    filter: blur(5px);
+    border-radius: 0px 10px 10px 0px;
+}
+
+#search {
+    height: 40px;
+    width: 90%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid grey;
+    display: flex;
+    border-radius: 10px;
+    max-width: 1200px;
+}
+
+#search input { 
+    width: 100%;
+    height: 100%;
+    display: block;
+    border: 0px;
+    border-radius: 10px;
+    padding-left: 5px;
+}
+
+#search img{
+    height: 35px;
+    width: 35px;
+    display: block;
+    float: right;
+}
+
+.future-heading { 
+    width: 100%;
+    font-size: 23px;
+    margin-left: 10px;
+    margin-top: 15px;
+    grid-row: 1;
+    color: black;
+    font-weight: 700;
+}
+
+.future-date { 
+    grid-row: 2;
+    font-size: 17px;
+    color: black;
+    margin-left: 10px;
+}
+
+.future-paragraph { 
+    grid-row: 3;
+    font-size: 17px;
+    color: black;
+    margin-left: 10px;
+    letter-spacing: 0.8px;
+    line-height: 25px;
+
+}
+
+.location { 
+    display: flex;
+    grid-row: 4;
+}
+
+.map-icon { 
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.future-location { 
+    margin-left: 25px;
+    color: rgb(0, 0, 0);
+}
+
+
+
+#indep-day { 
+    margin-bottom: 30px;
+}
+
+
+
+.all-events{ 
+    top: 100px;
+    width: 90%;
+    height: 250px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border-radius: 10px;
+}
+
+.all-events:hover { 
+    box-shadow: 0 10px 10px rgb(0 0 0 / 0.2);
+}
+
+
+@media (max-width: 1155px) {
+    .festival-info { 
+        font-size: 12px;
+        line-height: 14px;;
+    }
+
+    .future-paragraph { 
+        font-size: 15px;
+        line-height: 20px;
+    
+    }
+    #upcoming-events { 
+        width: 90%;
+        max-width: 1200px;
+        display: grid; 
+        margin-left: auto;
+        margin-right: auto;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #endless { 
+        margin-left: 60%;
+
+    }
+}
+
+@media (max-width: 840px) {
+
+    .future-paragraph { 
+        font-size: 12px;
+        line-height: 15px; 
+    }
+    .future-heading { 
+        font-size: 20px;
+    }
+    .future-date {
+        margin-top: 20px;
+        font-size: 12px;
+    }
+    .map-icon { 
+        width: 25px;
+        height: 25px;
+        margin-top: 7px;
+        margin-left: 10px;
+    }
+    .future-image { 
+        height: 100%;
+        width: 170px;
+    }
+
+    #future {
+        top: 1350px;
+    }
+
+    #upcoming-events { 
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        height: 1500px;
+    }
+
+    .festival-info { 
+        font-size: 15px;
+    }
+
+    #upcoming { 
+        height: 300px;
+    }
+
+    .event-card { 
+        height: 700px;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .future-heading { 
+        font-size: 12px;
+    }
+    .future-date { 
+        font-size: 10px;
+    
+    }
+    .future-image { 
+        object-fit: cover;
+    }
+    .future-paragraph { 
+        font-size: 10px;
+        margin: 0;
+    }
+}

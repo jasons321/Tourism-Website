@@ -1,0 +1,700 @@
+#image { 
+    width:100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    filter: brightness(70%);
+    top: 0;
+    object-fit: COVER;
+}
+
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+
+#endless { 
+    z-index: 2;
+    position: absolute;
+    width: 400px;
+    margin-left: 20%;
+    margin-top: 15%;
+}
+
+#endless p {
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+}
+
+#endless u {
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+}
+
+#getAround { 
+    width: 100%;
+    height: 300px;
+    position: relative;
+    top: 0px;
+}
+
+#plane-tickets {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: relative;
+}
+
+#plane-tickets h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#plane-table { 
+    height: 200px;
+    position: relative;
+    display: block;
+}
+
+#ticket-box { 
+    margin-top: 70px;
+    width: 85%;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto; 
+    height: 100%;
+
+}
+
+#ticket-form { 
+    background-color: #e2e2e2;
+    height: 400px;
+    max-width: 800px;
+    top: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding-top: 15px;
+}
+
+#show-tickets { 
+    margin-top: 70px;
+    width: 85%;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+#select-options { 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#loading { 
+    margin-top: 70px;
+    width: 85%;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    border-radius: 10px;
+    height: 300px;
+    display: none;
+}
+
+.ticket-bar { 
+    height: 200px;
+    width: 90%;
+    display: grid; 
+    grid-template-rows: repeat(2, 50%);
+    grid-template-columns: 75% 25%;
+    width: 100%;
+    border: 1px solid grey;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+.price-bar { 
+    grid-row: span 2 ;
+    grid-column: 2;
+    height: 100%;
+    width: 100%;
+    font-weight: bold;
+    font-size: 30px;
+    border-left: 1px solid grey;
+    text-align:  center;
+    line-height: 200px;
+}
+
+.departure-flight-bar { 
+    height: 100px;
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.time-location { 
+    width: 60px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    margin-left: 10px;
+    margin-right: 10px;
+    line-height: 5px;
+    top: 10px;
+}
+
+.circle { 
+    height: 8px;
+    width: 8px;
+    border-radius: 100%;
+    background-color: #000000;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    bottom: 23px;
+}
+
+.line{ 
+    width: 150px;
+    height: 2px;
+    background-color: black;
+    display: inline-block;
+    position: relative;
+    margin: auto;
+    line-height: 0.5px;
+    top: 15px;
+}
+
+.line-circle { 
+    width: 150px;
+    height: 2px;
+    background-color: black;
+    display: inline-block;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    top: 40px;
+}
+
+
+.duration { 
+    margin: 0;
+    position: relative;
+    bottom: 25px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.stops { 
+    position: relative;
+    bottom: 35px;
+}
+
+.departure-flight-bar {
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.return-flight-bar {
+    grid-row: 2;
+    grid-column: 1;
+}
+
+.airline { 
+    float: left;
+    position: relative;
+    font-size: 15px;
+    margin-left: 10px;
+    top: 10px;
+}
+
+.select { 
+    border: solid 1px black;
+    background-color: #ffffff;;
+    margin-right: 30px;
+    border-radius: 4px;
+    height: 30px;
+}
+
+.small-icon { 
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 3px;
+    margin-top: 10px;
+    z-index: 0;
+}
+
+#select-people { 
+    display: none;
+    height: 500px;
+    width: 500px;
+    background-color: rgb(241, 241, 241);
+    box-shadow: 0 0 0 100vmax rgba(0,0,0,.3);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    position: fixed;
+}
+
+#confirm-button { 
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 60px;
+    background-color: #000000;
+    color: white;
+    line-height: 60px;
+}
+
+#confirm-button:hover{ 
+    background-color: #9b9b9b;
+    color: rgb(0, 0, 0);
+}
+
+#counter { 
+    display: inline-block;
+    width: 200px;
+    margin-right: 40px;
+    background-color: #ffffff;;
+    border-radius: 4px;
+    position: relative;
+    font-size: 17px;
+    bottom: 3px;
+    line-height: 30px;
+}
+
+#counter:hover { 
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.input-box {
+    top: 15px;
+    border: 0px;
+    height: 50px;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+
+}
+
+#select-people p { 
+    font-size: 10px;
+}
+
+.incdec-icon  {
+    height: 15px;
+    width: 15px;
+    position: relative;
+    top: 17px;
+}
+
+.increment-button { 
+    width: 50px;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    display: inline-block;
+
+}
+
+.increment-button:hover{ 
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+#search-box { 
+    height: 200px;
+    width: 95%;
+    margin-top: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px 10px 10px 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+
+.select-airport {
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 12px;
+    text-align: center;
+    height: 30px;
+    border-radius: 4px;
+    top: 10px;
+}
+
+.select-date {
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 12px;
+    text-align: center;
+    height: 30px;
+    border-radius: 4px;
+    top: 10px;
+    width: 250px;
+}
+
+#search-button { 
+    width: 75%;
+    max-width: 800px;
+    margin-top: 50px;
+    position: relative;
+    background-color: #3190e9;
+    color: white;
+    z-index: 5;
+    height: 40px;
+    line-height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#search-button:hover { 
+    background-color: #3e99ee;
+}
+
+#around-text { 
+    margin-top: 70px;
+    width: 85%;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto; 
+    height: 230px;
+    border-bottom: 3px solid rgb(116, 112, 112);
+}
+
+#around-text h1 {
+    font-size: 35px;
+    letter-spacing: 3px;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+}
+
+#around-text p {
+    font-size: 20px;
+    letter-spacing: 0.6px;
+    line-height: 30px;
+    color: rgb(85, 81, 81);
+    font-weight: lighter;
+}
+
+#table-container {  
+    width: 100%;
+    height: 500px;
+    position: relative;
+    height: 1100px;
+    display: block;
+}
+
+#table-container h2 {  
+    font-size: 30px;
+    letter-spacing: 1.5px;
+    color: black;   
+    text-align: center;
+    color: rgb(122, 101, 60);
+    font-weight: 500;
+}
+
+#transport-table{  
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 85%;
+    border: 1px solid black;
+    padding: 0;
+    border-collapse: collapse;
+    position: relative;
+}
+
+#transport-table th {  
+    height: 100px;
+}
+
+#transport-table td {  
+    height: 150px;
+}
+
+
+#description { 
+    width: 400px;;
+}
+
+#proximity { 
+    text-align: center;
+}
+
+#table-header { 
+    background-color: #9C9496;
+    color: black;
+}
+
+.grey-row{ 
+    background-color:rgb(241, 240, 238); ;
+}
+
+.grey-row:hover{ 
+    background-color: rgb(255, 252, 236);
+}
+
+.row:hover { 
+    background-color: rgb(255, 252, 236);
+}
+
+.description { 
+    font-size: 15px;
+    line-height: 20px;;
+}
+
+.close-tag { 
+    background-color: rgb(117, 184, 51);
+    width: 55px;
+    height: 25px; 
+    text-align: center;
+    border-radius: 7px;
+    font-size: 14px;
+    line-height: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+
+.medium-tag { 
+    background-color: rgb(214, 214, 50);
+    margin-bottom: 10px;
+    width: 55px;
+    height: 25px; 
+    text-align: center;
+    border-radius: 7px;
+    font-size: 14px;
+    line-height: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+
+.far-tag { 
+    background-color: rgb(192, 33, 4);
+    width: 55px;
+    height: 25px; 
+    text-align: center;
+    border-radius: 7px;
+    font-size: 14px;
+    line-height: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+
+.options { 
+    text-align: center;
+    max-width: 120px;
+    min-width: 105px;
+}
+
+#plane-icon { 
+    transform: rotate(90deg);
+    top: 20px;
+    z-index: 2;
+    position: absolute;
+    display: none;
+    height: 70px;
+    width: 70px;
+}
+
+.icon { 
+    height: 40px;
+    width: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mode { 
+    text-align: center;
+    max-width: 60px;
+}
+
+@media (max-width: 890px) {
+    #plane-icon { 
+        width: 40px;
+        height: 40px;
+    }
+    
+    #getAround { 
+        max-height: 300px;
+        margin-bottom: 100px;
+    }
+    
+    #around-text  h1 {
+        font-size: 30px;
+    }
+    
+    #around-text  p {
+        font-size: 15px;
+    }
+
+    #around-text { 
+        height: 500px;
+    }
+    
+    #table-container {  
+        width: 100%;
+        height: 300px;
+        height: 1100px;
+    }
+
+    #search-box { 
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    #ticket-form { 
+        height: 480px;
+    }
+
+    #select-options { 
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    #counter {
+        height: 25px;
+    }
+
+    #ori-airport { 
+        width: 200px;
+    }
+}
+
+@media (max-width: 700px) {
+    #endless { 
+        z-index: 2;
+        position: absolute;
+        width: 100px;
+        margin-left: 20%;
+        margin-top: 15%;
+    }
+    
+    #endless p {
+        font-size: 20px;
+        color: rgb(255, 255, 255);
+    }
+    
+    #endless u {
+        font-size: 20px;
+        color: rgb(255, 255, 255);
+    }
+    .line-circle { 
+        width: 100px;
+    }
+    .duration { 
+        bottom: 20px;
+    }
+
+    .circle {
+        bottom: 13px;
+    }
+
+    .stops { 
+        bottom: 20px;
+    }
+}
+
+@media (max-width: 660px) {
+    #plane-icon { 
+        display: none;
+    }
+    #around-text  h1 {
+        font-size: 30px;
+    }
+    
+    #around-text  p {
+        font-size: 15px;
+    }
+    
+    #table-container {  
+        width: 100%;
+        height: 300px;
+        height: 1100px;
+    }
+    
+    .description { 
+        font-size: 10px;
+    }
+
+    .ticket-bar { 
+        grid-template-rows: repeat(3, 30%);
+        grid-template-columns: 100%;
+    }
+
+    .price-bar { 
+        grid-row: 3;
+        grid-column: 1;
+        line-height: 70px;
+        font-size: medium;
+    }
+
+    .ticket-bar p { 
+        font-size: 10px;
+    }
+
+    .line-circle { 
+        width: 10%;
+        top: 40px;
+    }
+
+    .departure-flight-bar { 
+        grid-row: 1;
+        grid-column: 1;
+        width: 100%;
+    }
+
+    .circle {
+        bottom: 13px;
+    }
+}
+
+@media (max-width: 750px) {
+    .airline { 
+        font-size: 10px;
+    }
+
+    #explore {
+        z-index: 2;
+        position: absolute;
+        width: 50px;
+        left: 20%;
+        top: 55%;
+    }
+    #explore p {
+        font-size: 20px;
+    }
+    #explore  u {
+        font-size: 20px;
+    }
+
+    #select-people { 
+        height: 400px;
+        width: 400px;
+    }
+    
+
+}

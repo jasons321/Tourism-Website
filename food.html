@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "css/food.css">
+    <link rel = "stylesheet" href = "css/global.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/global.js"></script>
+    <title>Food</title>
+</head>
+
+<body>
+
+    <!--Header and navigation bar-->
+    <header class = "navigation"> 
+        <img alt = "Indonesian flag" id = "flag" src = "images/download.png"> 
+        <nav class = "menu-bar"> 
+            <a href = "main.html" style="text-decoration:none">About</a>
+            <a href = "destination.html" style="text-decoration:none">Destination</a>
+            <a id = "active-bar">Food</a>
+            <a href = "events.html" style="text-decoration:none">Events</a>
+            <a href = "transportation.html" style="text-decoration:none">Transportation</a>
+        </nav>
+    </header>
+    <div class = "main-title" id = "food">
+        <p>Food is <u>priority</u>.</p>
+    </div>
+    <!--Page main image and text-->
+    <div class = "main-image"> 
+        <img alt = "Pandan pancake" id = "big-image" src = "images/pexels-anton-tezar-6802090.jpg">
+    </div>
+    <main> 
+        <!--Introduction to Indonesian food-->
+        <section id = "food-culture">
+            <div id = "food-text">
+                <h1>Food and Culture.</h1>
+                <p>
+                    What better way to spend your time in Indonesia than trying the delicious local cuisine. 
+                    From delicious grilled chicken covered in peanut sauce to crispy egg pancakes, you are 
+                    guaranteed to find something that will leave an everlasting impression on you. 
+                    Let's dive in...
+                </p>
+            </div>    
+        </section>
+        <!--Collection of images of food to try whilst in Indonesia-->
+        <section id = "food-collection">
+            <h2>Foods to try.</h2>
+            <div id = "foodcol-inner">
+                <div class = "image-container" id = "bakmi">
+                    <img alt = "Bakmi" class = "food-image" src = "images/indonesia-6033061_640.jpg">
+                    <h3 class = "food-heading">Bakmi</h3>
+                </div>
+                <div class = "image-container" id = "rendang">
+                    <img alt = "Rendang" class = "food-image" src = "images/ting-tian-al9eh9QkdPA-unsplash.jpg">
+                    <h3 class = "food-heading">Rendang</h3>
+                </div>
+                <div class = "image-container" id = "ayam-gep">
+                    <img alt = "Ayam Geprek" class = "food-image" src = "images/pexels-lintoe-14272918.jpg">
+                    <h3 class = "food-heading">Ayam Geprek</h3>
+                </div>
+                <div class = "image-container" id = "salak">
+                    <img alt = "Salak" class = "food-image" src = "images/pexels-adityo-cahyo-4025632.jpg">
+                    <h3 class = "food-heading">Salak</h3>
+                </div>
+                <div class = "image-container" id = "soto">
+                    <img alt = "Soto" class = "food-image" src = "images/rafly-alfaridzy-9JC5KK9amxA-unsplash.jpg">
+                    <h3 class = "food-heading">Soto</h3>
+                </div>
+                <div class = "image-container" id = "sate">
+                    <img alt = "Sate" class = "food-image" src = "images/nita-anggraeni-goenawan-9tuLDya614I-unsplash.jpg">
+                    <h3 class = "food-heading">Sate</h3>
+                </div>
+                <div class = "image-container" id = "martabak">
+                    <img alt = "Martabak" class = "food-image" src = "images/murtabak-6714996_640.jpg">
+                    <h3 class = "food-heading">Martabak Telor</h3>
+                </div>
+                <div class = "image-container" id = "bakso">
+                    <img alt = "Bakso" class = "food-image" src = "images/culinary-4498129_640.jpg">
+                    <h3 class = "food-heading">Bakso</h3>
+                </div>
+                <div class = "image-container" id = "jenang">
+                    <img alt = "Jenang Mutiara" class = "food-image" src = "images/jenang-mutiara-7585243_640.jpg">
+                    <h3 class = "food-heading" id = "jenang-text">Jenang Mutiara</h3>
+                </div>
+                <div class = "image-container" id = "bakmi-two">
+                    <img alt = "Bakmi" class = "food-image" src = "images/indonesia-6033061_640.jpg">
+                    <h3 class = "food-heading">Bakmi</h3>
+                </div>
+                <div class = "image-container" id = "rendang-two">
+                    <img alt = "Rendang" class = "food-image" src = "images/ting-tian-al9eh9QkdPA-unsplash.jpg">
+                    <h3 class = "food-heading">Rendang</h3>
+                </div>
+                <div class = "image-container" id = "ayam-gep-two">
+                    <img alt = "Ayam Geprek" class = "food-image" src = "images/pexels-lintoe-14272918.jpg">
+                    <h3 class = "food-heading">Ayam Geprek</h3>
+                </div>
+                <div class = "image-container" id = "salak-two">
+                    <img alt = "Salak" class = "food-image" src = "images/pexels-adityo-cahyo-4025632.jpg">
+                    <h3 class = "food-heading">Salak</h3>
+                </div>
+                <div class = "image-container" id = "soto-two">
+                    <img alt = "Soto" class = "food-image" src = "images/rafly-alfaridzy-9JC5KK9amxA-unsplash.jpg">
+                    <h3 class = "food-heading">Soto</h3>
+                </div>
+                <div class = "image-container" id = "sate-two">
+                    <img alt = "Sate" class = "food-image" src = "images/nita-anggraeni-goenawan-9tuLDya614I-unsplash.jpg">
+                    <h3 class = "food-heading">Sate</h3>
+                </div>
+                <div class = "image-container" id = "martabak-two">
+                    <img alt = "Martabak" class = "food-image" src = "images/murtabak-6714996_640.jpg">
+                    <h3 class = "food-heading">Martabak Telor</h3>
+                </div>
+                <div class = "image-container" id = "bakso-two">
+                    <img alt = "Bakso" class = "food-image" src = "images/culinary-4498129_640.jpg">
+                    <h3 class = "food-heading">Bakso</h3>
+                </div>
+                <div class = "image-container" id = "jenang-two">
+                    <img alt = "Jenang Mutiara" class = "food-image" src = "images/jenang-mutiara-7585243_640.jpg">
+                    <h3 class = "food-heading">Jenang Mutiara</h3>
+                </div>
+            </div>
+        </section> 
+        <!--Famous restaurants to try-->
+        <section id = "restaurant-list"> 
+            <div id = "restaurantl-inner">
+                <h2>Legendary places.</h2>
+                <!--Restaurants in Jakarta-->
+                <div id = "jakarta">
+                    <h3 class = "city">Jakarta</h3>
+                    <div class = "restaurant-container">
+                        <div class = "restaurant-card">
+                            <img alt = "Kebon Sirih fried rice" class = "restaurant-image" src = "images/kebonsirih.jpeg">
+                            <a href = "https://www.tripadvisor.co.uk/Restaurant_Review-g294229-d1023165-Reviews-Nasi_Goreng_Kambing_Kebon_Sirih-Jakarta_Java.html" class = "restaurant-text"> 
+                                <h4>Kebon Sirih fried rice</h4>
+                                <p>
+                                    Famous for their lamb fried rice, this has place is regarded as one of the best
+                                    fried rice stalls in Jakarta.
+                                </p>
+                                <div class = "location"> 
+                                    <img alt = "Map icon" class = "map-icon" src = "images/icons8-map-pin-24.png"> 
+                                    <p class = "restaurant-location">Jl. Danau Permai no. 12B Pamulang 10310</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class = "restaurant-card">
+                            <img alt = "Soto Betawi" class = "restaurant-image" src = "images/sotobetawu.jpeg">
+                            <a href = "https://foursquare.com/v/soto-betawi-pondok-pinang/4bda7bb0c79cc9285b027fe9" class = "restaurant-text"> 
+                                <h4>Soto Betawi in Pondok Pinang</h4>
+                                <p>Traditional soup consisting of beef and other ingredients, soto betawi is a local
+                                    favourite and this place does it best!
+                                </p>
+                                <div class = "location"> 
+                                    <img alt = "Map icon" class = "map-icon" src = "images/icons8-map-pin-24.png"> 
+                                    <p class = "restaurant-location">Jl Pondok Pinang Raya No 21</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class = "restaurant-card">
+                            <img alt = "Gado-gado" class = "restaurant-image" src = "images/gadogado.jpeg">
+                            <a href = "https://www.tripadvisor.co.uk/Restaurant_Review-g294229-d3625412-Reviews-Gado_Gado_Bon_Bin-Jakarta_Java.html" class = "restaurant-text"> 
+                                <h4>Gado-gado Bonbin</h4>
+                                <p>Bonbin has been serving gado-gado (mixed vegetable with peanut sauce) for 50 years, 
+                                    a must-try when you visit Jakarta.
+                                </p>
+                                <div class = "location"> 
+                                    <img alt = "Map icon" class = "map-icon" src = "images/icons8-map-pin-24.png"> 
+                                    <p class = "restaurant-location">Jl. Cikini IV 1330</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class = "restaurant-card">
+                            <img alt = "Porridge" class = "restaurant-image" src = "images/porridge.jpeg">
+                            <a href = "https://www.tripadvisor.co.id/Restaurant_Review-g294229-d10239108-Reviews-Bubur_Ayam_Barito-Jakarta_Java.html" class = "restaurant-text"> 
+                                <h4>Bubur Ayam Barito</h4>
+                                <p>Fancy a warm porridge covered in various toppings to start off your morning? 
+                                    This delicious dish will leave you wanting a second bowl.
+                                </p>
+                                <div class = "location"> 
+                                    <img alt = "Map icon" class = "map-icon" src = "images/icons8-map-pin-24.png"> 
+                                    <p class = "restaurant-location">Jl. Gandaria Tengah 3 Kramat Pela</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!--Restaurants in Bali-->
+                <div id = "bali">
+                    <h3 class = "city">Bali</h3>
+                    <div class = "restaurant-container">
+                        <div class = "restaurant-card">
+                            <img alt = "Babi Guling" class = "restaurant-image" src = "images/babiguling.jpeg">
+                            <a href = "https://www.tripadvisor.co.uk/Restaurant_Review-g297701-d1182744-Reviews-Babi_Guling_Bu_Oka-Ubud_Gianyar_Regency_Bali.html" class = "restaurant-text"> 
+                                <h4>Babi Guling Bu Oka</h4>
+                                <p>Babi guling is a staple of balinese cuisine where a variety of toppings are complemented
+                                    with rice, with a side of crispy pork skin. Bu Oka is renowned for this dish.
+                                </p>
+                                <div class = "location"> 
+                                    <img alt = "Map icon" class = "map-icon" src = "images/icons8-map-pin-24.png"> 
+                                    <p class = "restaurant-location">Jalan Tegal Sari No. 2, Ubud</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class = "restaurant-card">
+                            <img alt = "Sate babi" class = "restaurant-image" src = "images/satebabi.jpeg">
+                            <a href = "https://www.tripadvisor.co.id/Restaurant_Review-g608487-d14206380-Reviews-Sate_Babi_Bawah_Pohon-Legian_Kuta_District_Bali.html" class = "restaurant-text">
+                                <h4>Sate Babi Bawah Pohon</h4>
+                                <p>One of the best places in Bali to eat grilled skewered pork. The charred bits paired with
+                                    a hint of sweetness makes this a perfect dish to enjoy after a long day of adventures.
+                                </p>
+                                <div class = "location"> 
+                                    <img alt = "Map icon" class = "map-icon" src = "images/icons8-map-pin-24.png"> 
+                                    <p class = "restaurant-location">Jl. Dewi Sri Campuhan I, Legian </p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class = "restaurant-card">
+                            <img alt = "Seafood cafe" class = "restaurant-image" src = "images/radja.jpeg">
+                            <a href = "https://www.tripadvisor.co.uk/Restaurant_Review-g297696-d3394391-Reviews-Radja_Seafood_Cafe-Jimbaran_South_Kuta_Bali.html" class = "restaurant-text">
+                                <h4>Radja Seafood Cafe</h4>
+                                <p>Looking to relax, enjoy the sound of waves crashing ashore while eating delicious seafood? 
+                                    Radja Seafood cafe is the perfect place to have the best dinner experience of your lifetime.
+                                </p>
+                                <div class = "location"> 
+                                    <img alt = "Map icon" class = "map-icon" src = "images/icons8-map-pin-24.png"> 
+                                    <p class = "restaurant-location">Jl. Four Season, Jimbaran 80364</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class = "restaurant-card">
+                            <img alt = "Rice dish" class = "restaurant-image" src = "images/warung.jpeg">
+                            <a href = "https://www.lonelyplanet.com/indonesia/bali/denpasar/restaurants/warung-wardani/a/poi-eat/1498820/356551" class = "restaurant-text">
+                                <h4>Warung Wardani</h4>
+                                <p>Rice paired with a variety of dishes of your choosing, Warung Wardani is a must-try in Bali.
+                                </p>
+                                <div class = "location"> 
+                                    <img alt = "Map icon" class = "map-icon" src = "images/icons8-map-pin-24.png"> 
+                                    <p class = "restaurant-location">Jl. Yudistira no. 2, Denpasar</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!--Restaurants in Yogyakarta-->
+                <div id = "yogyakarta">
+                    <h3 class = "city">Yogyakarta</h3>
+                    <div class = "restaurant-container">
+                        <div class = "restaurant-card">
+                            <img alt = "Gudeg" class = "restaurant-image" src = "images/gudeg.jpeg">
+                            <a href = "https://www.tripadvisor.com/Restaurant_Review-g294230-d12374706-Reviews-Gudeg_Mbah_Lindu-Yogyakarta_Region_Java.html" class = "restaurant-text">
+                                <h4>Gudeg Mbah Lindu</h4>
+                                <p>This restaurant has been selling gudeg for over 80 years. Gudeg is a rice dish paired with
+                                    toppings such as marinated eggs, chicken, and sambal sauce for a bit of a kick.
+                                </p>
+                                <div class = "location"> 
+                                    <img alt = "Map icon" class = "map-icon" src = "images/icons8-map-pin-24.png"> 
+                                    <p class = "restaurant-location">Jl. Sosrowijayan Sosromenduran, Gedong Tengen</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class = "restaurant-card">
+                            <img alt = "Bakmi" class = "restaurant-image" src = "images/bakmi.jpeg">
+                            <a href = "https://www.tripadvisor.co.id/Restaurant_Review-g14782503-d7112547-Reviews-Bakmi_Jowo_Mbah_Gito-Yogyakarta_Yogyakarta_Region_Java.html" class = "restaurant-text">
+                                <h4>Bakmi Jowo Mbah Gito</h4>
+                                <p>Often called Java noodle, mie jowo is a traditional noodle dish consisting of yellow noodle 
+                                    and a variety of other spices. Mbah Gito is the go-to place for trying this dish.
+                                </p>
+                                <div class = "location"> 
+                                    <img alt = "Map icon" class = "map-icon" src = "images/icons8-map-pin-24.png"> 
+                                    <p class = "restaurant-location">Jl. Nyi Ageng Nis No.9, Rejowinangun</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class = "restaurant-card">
+                            <img alt = "Tiwul" class = "restaurant-image" src = "images/tiwul.jpeg">
+                            <a href = "https://www.tripadvisor.com/Restaurant_Review-g294230-d12484799-Reviews-Tiwul_Ayu_Mbok_Sum-Yogyakarta_Region_Java.html" class = "restaurant-text">
+                                <h4>Tiwul Ayu Mbok Sum</h4>
+                                <p>A unique traditional Yogyakarta dessert made from cassava. Make sure to pair
+                                    it with some tea.
+                                </p>
+                                <div class = "location"> 
+                                    <img alt = "Map icon" class = "map-icon" src = "images/icons8-map-pin-24.png"> 
+                                    <p class = "restaurant-location">Jl. Mangunan Km 4,5</p>
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <div class = "restaurant-card">
+                            <img alt = "Bakpia" class = "restaurant-image" src = "images/bakpia.jpeg">
+                            <a href = "https://www.tripadvisor.co.uk/Restaurant_Review-g294230-d7362243-Reviews-Bakpia_Kurnia_Sari-Yogyakarta_Region_Java.html" class = "restaurant-text">
+                                <h4>Bakpia Kurnia Sari</h4>
+                                <p>Popular pastry that contains different types of fillings, don't miss out!
+                                <div class = "location"> 
+                                    <img alt = "Map icon" class = "map-icon" src = "images/icons8-map-pin-24.png"> 
+                                    <p class = "restaurant-location">Jl. Glagahsari no. 91C</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
